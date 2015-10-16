@@ -1,0 +1,13 @@
+.title-description {
+  @extend %section-padding-top-bottom;
+  @extend %flex-box;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    margin-bottom: font-size(1);
+  }
+  p {
+    max-width: 70rem;
+  }
+}

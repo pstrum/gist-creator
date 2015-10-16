@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  @extend %section-padding-top-bottom;
+
+  h1 {
+    font-family: $font-primary;
+    font-weight: weight(medium);
+    font-size: font-size(3);
+    color: color(base);
+  }
+}

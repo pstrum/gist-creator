@@ -1,0 +1,41 @@
+%form-style {
+  font-family: $font-primary;
+  font-size: font-size(0);
+  border: 1px solid color(secondary);
+  border-radius: 5px;
+}
+
+.create-post {
+  label {
+    display: inline-block;
+    font-family: $font-primary;
+    font-size: font-size(1);
+  }
+  li a {
+    display: inline-block;
+  }
+
+  input {
+    @extend %form-style;
+    padding: .3em .3em;
+  }
+  textarea {
+    @extend %form-style;
+    padding: .3em .3em;
+    min-height: 20em;
+  }
+  input[type=text] {
+    padding: .5em;
+  }
+  input[type=submit] {
+    font-size: font-size(0);
+    padding: 1em 2em;
+  }
+  input[type=submit]:hover {
+    cursor: pointer;
+  }
+  input[type=checkbox] {
+    display: inline-block;
+    width: 2em;
+  }
+}

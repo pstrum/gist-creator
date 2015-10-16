@@ -1,0 +1,17 @@
+<article class="blog-post">
+  <h1>{{ vm.gist.description }}</h1>
+  <section ng-repeat="file in vm.gist.files">
+    <h2><em>{{ file.filename }}</em></h2>
+    <p><code>{{ file.content }}</code><p>
+  </section>
+  <ul>
+    <li><img ng-src="{{ vm.gist.owner.avatar_url }}" alt="Photo of {{ vm.gist.owner.login }}" title="Photo of {{ vm.gist.owner.login }}"></li>
+    <li>By <a href="{{ vm.gist.owner.html_url }}">{{ vm.gist.owner.login }}</a></li>
+    <li>{{ vm.gist.created_at | date}}</li>
+    <li>{{ vm.gist.comments}} comments</li>
+  </ul>
+  <div>
+    <a href="#/gists/{{ vm.gist.id }}/edit" class="button-big button-read">Edit</a>
+    <a href="#/gists/" class="button-big button-read">Home</a>
+  </div>
+</article>

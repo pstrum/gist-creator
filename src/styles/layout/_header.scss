@@ -1,0 +1,7 @@
+header {
+  background-color: color(primary);
+  @extend %flex-box;
+  h1 {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,43 @@
+$break: 50em;
+
+$theme-colors: (
+  primary: #1e1d24,
+  accent: #97f1e7,
+  secondary: #bbbbbd,
+  base: #ffffff
+);
+
+$shades-primary: (
+  1: mix(white, map-get($theme-colors, primary), 52.5%),
+  2: mix(white, map-get($theme-colors, primary), 70%),
+  3: mix(white, map-get($theme-colors, primary), 77%),
+  4: mix(white, map-get($theme-colors, primary), 80%),
+  5: mix(white, map-get($theme-colors, primary), 90%)
+);
+
+$shades-accent: (
+  -2: mix(black, map-get($theme-colors, accent), 40%),
+  -1: mix(black, map-get($theme-colors, accent), 15.4%),
+  1: mix(white, map-get($theme-colors, accent), 50%)
+);
+
+$font-primary: 'Ubuntu', sans-serif;
+$font-secondary: 'Roboto Slab', sans-serif;
+
+$base-font-size: 16px;
+
+$modular-scale: (
+  -1: 0.75rem,
+  0: $base-font-size,
+  1: 1.333rem,
+  2: 1.777rem,
+  3: 2.369rem,
+  4: 3.157rem
+);
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700
+);

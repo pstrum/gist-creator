@@ -1,0 +1,48 @@
+@mixin button($background, $text-color, $size) {
+  text-transform: uppercase;
+  background: $background;
+  color: $text-color;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: $size;
+  padding-right: $size;
+  margin-left: .25em;
+  margin-right: .25em;
+  font-family: $font-primary;
+  font-size: font-size(0);
+}
+
+.button-big,
+.button-read {
+  @include button(black, white, 2em);
+}
+
+.button-change,
+.button-create,
+.button-feature:hover {
+  background: white;
+  color: black;
+}
+
+.button-feature:hover {
+  font-weight: weight(regular)
+}
+
+.button-feature {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid white;
+  font-weight: weight(regular);
+  margin-bottom: 1em;
+}
+
+.button-small {
+  @include button(white, black, 1em);
+}
+
+.button-small:hover {
+  background: black;
+  color: white;
+}

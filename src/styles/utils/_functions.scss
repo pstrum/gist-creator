@@ -1,0 +1,23 @@
+@function color($key: 'primary') {
+  @return map-get($theme-colors, $key);
+}
+
+@function shades-primary($key: '1') {
+  @return map-get($shades-primary, $key);
+}
+
+@function shades-accent($key: '1') {
+  @return map-get($shades-accent, $key);
+}
+
+@function weight($key: 'regular') {
+  @return map-get($font-weights, $key);
+}
+
+@function font-size($key: '0') {
+  @return map-get($modular-scale, $key);
+}
+
+@function fonts($key: 'primary') {
+  @return map-get($fonts, $key);
+}

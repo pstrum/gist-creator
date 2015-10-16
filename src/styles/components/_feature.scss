@@ -1,0 +1,21 @@
+.feature {
+  font-family: $font-primary;
+  text-align: center;
+  background-color: color(accent);
+  h1 {
+    font-weight: weight(regular);
+    font-size: 3em;
+    line-height: 1;
+    color: color(base);
+  }
+  p {
+    font-weight: weight(regular);
+    font-size: font-size(1);
+    line-height: 2.25;
+    color: shades-accent(1);
+  }
+  .button-feature {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}

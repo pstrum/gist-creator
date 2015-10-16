@@ -1,0 +1,41 @@
+.icon-circle {
+	border-radius: 50%;
+	width: 8em ;
+	height: 8em;
+	padding-top: 3.5em;
+	padding-bottom: 2.5em;
+	padding-right: 1.2em;
+	padding-left: 1.2em;
+	border: .12em solid color(secondary);
+	position: relative;
+	display: block;
+	text-align: center;
+}
+.social-link-footer {
+
+	li {
+		margin-right: 2em;
+		display: inline-block;
+		&:hover {
+			.icon-text {
+				color: color(accent);
+			}
+		}
+		.icon-circle {
+			.footer-icon {
+				left: 0;
+				bottom: 1.8em;
+				position: absolute;
+				font-size: 3em;
+				color: color(primary);
+				background-color: color(base);
+			}
+		}
+	}
+}
+.icon-text {
+	color: color(primary);
+	font-family: Ubuntu;
+	font-size: font-size(0);
+	font-weight: weight(bold);
+}

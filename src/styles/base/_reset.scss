@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+[ng-cloak] {
+  visibility: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li, a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, p, figure, blockquote {
+  margin: 0;
+  font-weight: normal;
+}

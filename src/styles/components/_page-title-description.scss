@@ -1,0 +1,16 @@
+.title-description {
+  font-family: $font-secondary;
+  background-color: color(accent);
+  border-bottom: 2px solid shades-accent(-1);
+  h1 {
+    font-weight: weight(regular);
+    font-size: 3.33em;
+    color: color(primary);
+  }
+  p {
+    font-weight: weight(light);
+    font-size: font-size(3);
+    line-height: 3.5rem;
+    color: shades-accent(-2);
+  }
+};
